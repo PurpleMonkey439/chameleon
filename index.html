@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Chameleon</title>
+<style>
+  :root{--bg:#f6f7f4;--card:#ffffff;--text:#1d2420;--muted:#5b665f;--accent:#2f8f4e;--line:#dfe4dc;--code:#eef2ec}
+  @media (prefers-color-scheme:dark){:root{--bg:#141815;--card:#1c221e;--text:#e8ede9;--muted:#9aa79f;--accent:#58c27d;--line:#2c352f;--code:#232b26}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+  h1{font-size:1.9rem;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+  .step{display:flex;gap:14px}
+  .num{flex:none;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+  h2{font-size:1.1rem;margin:2px 0 6px}
+  p{margin:6px 0}
+  a{color:var(--accent)}
+  code,.addr{background:var(--code);border-radius:6px;padding:2px 6px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+  .addr{display:block;padding:10px 12px;word-break:break-all;margin:8px 0;user-select:all}
+  button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-size:.9rem;cursor:pointer}
+  .note{color:var(--muted);font-size:.92rem}
+  ul{margin:6px 0 6px 20px;padding:0}
+  details{margin:8px 0}
+  summary{cursor:pointer;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+  <h1>Join the Chameleon server</h1>
+  <p class="sub">Modded Survival &middot; NeoForge 1.21.1 &middot; Mods download automatically with AutoModpack</p>
+
+  <div class="card">
+    <strong>The short version:</strong> install NeoForge 1.21.1, drop the AutoModpack file into your <code>mods</code> folder, then join using the address in step 5. AutoModpack downloads everything else for you.
+  </div>
+
+  <div class="card step"><div class="num">1</div><div>
+    <h2>Have Minecraft Java Edition 1.21.1</h2>
+    <p>Open the Minecraft Launcher once and run version <strong>1.21.1</strong> so the game files are downloaded.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">2</div><div>
+    <h2>Install NeoForge 1.21.1</h2>
+    <p>Download the installer for <strong>Minecraft 1.21.1</strong> from <a href="https://neoforged.net/" target="_blank" rel="noopener">neoforged.net</a>. Close the launcher, run the installer, choose <strong>Install client</strong>, and click OK.</p>
+    <p class="note">Tip: make a separate profile for modded play, in the launcher's Installations tab, with its own game folder, so your normal game stays clean.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">3</div><div>
+    <h2>Add AutoModpack to your mods folder</h2>
+    <p>Download the newest <strong>AutoModpack</strong> file for NeoForge 1.21.1 from <a href="https://modrinth.com/mod/automodpack" target="_blank" rel="noopener">modrinth.com/mod/automodpack</a>. Put the <code>.jar</code> file in the <code>mods</code> folder of your NeoForge profile. Launch it once and the folder appears.</p>
+    <p class="note">Do not add any other mods yourself. AutoModpack handles them.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">4</div><div>
+    <h2>Start the NeoForge profile</h2>
+    <p>Launch the NeoForge profile and wait until the main menu appears. Then open <strong>Multiplayer &rarr; Add Server</strong>.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">5</div><div>
+    <h2>Enter the server address</h2>
+    <p>Name it anything you like. For the <strong>Server Address</strong>, copy and paste this whole line, including the part after the <code>#</code>:</p>
+    <div class="addr" id="addr">chameleon.minecraft.best#amp1=9b792be25f39a88a361c6d506c5e8a8156beb55a5710b7d738eec4061e661cfd</div>
+    <button type="button" id="copy">Copy address</button>
+    <p class="note">The long part after the <code>#</code> lets AutoModpack confirm it is really our server, so there is nothing else to type or check.</p>
+  </div></div>
+
+  <div class="card step"><div class="num">6</div><div>
+    <h2>Join, accept the download, and restart</h2>
+    <p>Click the server to join. AutoModpack shows the mods it needs. Click to confirm and let it download.</p>
+    <p>Under <strong>Customize</strong> you can pick optional extras, such as a brightness toggle, dynamic lights and Macro Keybinds. The required mods are installed no matter what.</p>
+    <p>When it asks you to <strong>restart</strong>, close the game and open the same profile again, then join. You are in.</p>
+  </div></div>
+
+  <div class="card">
+    <h2>Using Prism Launcher instead?</h2>
+    <p>Create a new instance, choose <strong>Minecraft 1.21.1</strong> with the <strong>NeoForge</strong> loader, put the AutoModpack file in its mods folder, and continue from step 4.</p>
+  </div>
+
+  <div class="card">
+    <h2>Trouble connecting?</h2>
+    <details><summary>It says the version or mods do not match</summary>
+      <p>Make sure you are running the NeoForge 1.21.1 profile, not plain Minecraft, and that you used the full address from step 5.</p>
+    </details>
+    <details><summary>It says the server is offline or times out</summary>
+      <p>The server may be restarting. Wait two minutes and try again. If it still fails, tell Ryan.</p>
+    </details>
+    <details><summary>I do not see an AutoModpack screen</summary>
+      <p>The AutoModpack file is probably in the wrong place. It must be in the <code>mods</code> folder of the NeoForge profile you are launching, and the file must end in <code>.jar</code>.</p>
+    </details>
+  </div>
+
+  <p class="note">Server rules: be civil, no griefing, and have fun.</p>
+</main>
+<script>
+  var b=document.getElementById('copy');
+  b.addEventListener('click',function(){
+    var t=document.getElementById('addr').textContent.trim();
+    var done=function(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy address'},1500)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){})}
+    else{var r=document.createRange();r.selectNode(document.getElementById('addr'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  });
+</script>
+</body>
+</html>
