@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Join Chameleon</title>
+<title>Chameleon Minecraft Server</title>
 <style>
   :root{--bg:#f6f7f4;--card:#ffffff;--text:#1d2420;--muted:#5b665f;--accent:#2f8f4e;--line:#dfe4dc;--code:#eef2ec}
   @media (prefers-color-scheme:dark){:root{--bg:#141815;--card:#1c221e;--text:#e8ede9;--muted:#9aa79f;--accent:#58c27d;--line:#2c352f;--code:#232b26}}
@@ -11,6 +11,8 @@
   body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
   main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
   h1{font-size:1.9rem;margin:0 0 4px}
+  h3{font-size:1rem;margin:16px 0 4px;color:var(--accent)}
+  li{margin:3px 0}
   .sub{color:var(--muted);margin:0 0 24px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
   .step{display:flex;gap:14px}
@@ -29,11 +31,15 @@
 </head>
 <body>
 <main>
-  <h1>Join the Chameleon server</h1>
+  <h1>Welcome to Chameleon Minecraft Server</h1>
   <p class="sub">Modded Survival &middot; NeoForge 1.21.1 &middot; Mods download automatically with <a href="https://modrinth.com/mod/automodpack" target="_blank" rel="noopener">AutoModpack</a></p>
 
+    <div class="card">
+    <strong>About the server:</strong> Chameleon is a friendly modded survival world on NeoForge 1.21.1. Expect Create machines and flying contraptions, new biomes and structures, extra mobs and bosses, seasons, and plenty of food and farming mods, all played the vanilla way: build, explore, trade and live together peacefully.
+  </div>
+
   <div class="card">
-    <strong>The short version:</strong> install NeoForge 1.21.1, drop the AutoModpack file into your <code>mods</code> folder, then join using the address in step 5. AutoModpack downloads everything else for you.
+    <strong>The short version:</strong> install NeoForge 1.21.1, drop the AutoModpack file into your <code>mods</code> folder, then join using the address in step 5. AutoModpack downloads everything else for you.<br>AutoModpack also asks for a <strong>server fingerprint</strong> (a code that proves this is our server). It is shown below in step 5. <a href="#step5">Skip to step 5</a> if that is what you need.
   </div>
 
   <div class="card step"><div class="num">1</div><div>
@@ -58,7 +64,7 @@
     <p>Launch the NeoForge profile and wait until the main menu appears. Then open <strong>Multiplayer &rarr; Add Server</strong>.</p>
   </div></div>
 
-  <div class="card step"><div class="num">5</div><div>
+  <div class="card step" id="step5"><div class="num">5</div><div>
     <h2>Enter the server address</h2>
     <p>Name it anything you like. For the <strong>Server Address</strong>, copy and paste this whole line, including the part after the <code>#</code>:</p>
     <div class="addr" id="addr">chameleon.minecraft.best#amp1=9b792be25f39a88a361c6d506c5e8a8156beb55a5710b7d738eec4061e661cfd</div>
@@ -74,6 +80,136 @@
     <p>Under <strong>Customize</strong> you can pick optional extras, such as a brightness toggle, dynamic lights and Macro Keybinds. The required mods are installed no matter what.</p>
     <p>When it asks you to <strong>restart</strong>, close the game and open the same profile again, then join. You are in.</p>
   </div></div>
+
+  <div class="card">
+    <h2>What mods are on the server?</h2>
+    <p class="note">You do not install any of these by hand. AutoModpack downloads them for you.</p>
+    <details><summary>Show the full mod list</summary>
+    <h3>Create and add-ons</h3>
+    <ul>
+      <li><strong>Create</strong>: Gears, belts and machines for building factories and automation.</li>
+      <li><strong>Create Connected</strong>: Extra building blocks and smoother connections for Create.</li>
+      <li><strong>Create Crafts &amp; Additions</strong>: Adds electricity, motors and extra components to Create.</li>
+      <li><strong>Create: Enchantment Industry</strong>: Automates enchanting and experience handling.</li>
+      <li><strong>Create Central Kitchen</strong>: Makes Create work together with cooking mods.</li>
+      <li><strong>Slice &amp; Dice</strong>: Automated cutting and cooking for Create and Farmer&#x27;s Delight.</li>
+      <li><strong>Create Dragons Plus</strong>: Dragon-themed additions that plug into Create.</li>
+      <li><strong>Create Submarine</strong>: Build working submarines for exploring the deep.</li>
+      <li><strong>Create Aeronautics, Aeroworks and Sable</strong>: Build flying contraptions with real physics.</li>
+      <li><strong>Cosmonautics and Deep Air</strong>: More Create-based machines and exploration content.</li>
+      <li><strong>Delightful Creators</strong>: Food crossover items that tie Create and Delight mods together.</li>
+    </ul>
+    <h3>World generation and structures</h3>
+    <ul>
+      <li><strong>Biomes O&#x27; Plenty</strong>: Dozens of new biomes.</li>
+      <li><strong>Terralith</strong>: Reshapes the overworld with dramatic terrain and new biomes.</li>
+      <li><strong>Terraphilic and Geophilic</strong>: Extra terrain variety that blends with the other biome mods.</li>
+      <li><strong>Amplified Nether</strong>: Taller, wilder Nether terrain.</li>
+      <li><strong>Structory</strong>: New structures to find around the world.</li>
+      <li><strong>Dungeons and Taverns</strong>: New dungeons, taverns and villages to explore.</li>
+      <li><strong>Luki&#x27;s Woodland Mansions</strong>: More varied woodland mansions.</li>
+      <li><strong>Yung&#x27;s Better Caves, Dungeons, Mineshafts, Strongholds and End Island</strong>: Bigger, better versions of vanilla underground structures.</li>
+      <li><strong>End Remastered</strong>: New End structures, bosses and loot.</li>
+      <li><strong>Spelunkery</strong>: Caves, spelunking gear and new underground features.</li>
+      <li><strong>Spelunker&#x27;s Charm</strong>: Adds cave ores and underground features.</li>
+    </ul>
+    <h3>Mobs and combat</h3>
+    <ul>
+      <li><strong>Alex&#x27;s Mobs</strong>: Lots of new animals and creatures.</li>
+      <li><strong>Friends &amp; Foes</strong>: Adds the mobs that lost the Minecraft Live votes.</li>
+      <li><strong>Brutal Bosses</strong>: Makes bosses tougher with new abilities.</li>
+      <li><strong>Enhanced AI</strong>: Smarter mob behaviour.</li>
+      <li><strong>Guard Villagers</strong>: Villagers get iron golem-style guards.</li>
+      <li><strong>Nyf&#x27;s Spiders</strong>: More kinds of spiders.</li>
+      <li><strong>Realm RPG Skeletons</strong>: New skeleton variants.</li>
+      <li><strong>Better Tridents</strong>: Improves how tridents behave.</li>
+      <li><strong>Eyes in the Darkness</strong>: Creepy eyes watch you in the dark.</li>
+      <li><strong>Dummmmmmy</strong>: Target dummies to test your damage.</li>
+    </ul>
+    <h3>Food and farming</h3>
+    <ul>
+      <li><strong>Farmer&#x27;s Delight</strong>: Cooking, crops and a farming overhaul.</li>
+      <li><strong>Alex&#x27;s Delight, Corn Delight, My Nether&#x27;s Delight</strong>: Extra Delight recipes and foods from mobs, corn and the Nether.</li>
+      <li><strong>Storage Delight</strong>: Storage blocks for food and ingredients.</li>
+      <li><strong>Cook Your Food</strong>: Raw food can be cooked on more heat sources.</li>
+      <li><strong>Spice of Life: Classic</strong>: Eating a variety of foods keeps you better fed.</li>
+      <li><strong>Smarter Farmers</strong>: Villager farmers harvest and replant more intelligently.</li>
+      <li><strong>Just Enough Breeding</strong>: Shows breeding info for animals in JEI.</li>
+      <li><strong>Haunted Harvest</strong>: Spooky seasonal crops and foods.</li>
+    </ul>
+    <h3>Survival and building</h3>
+    <ul>
+      <li><strong>Legendary Survival Overhaul</strong>: Adds temperature and thirst.</li>
+      <li><strong>Serene Seasons and Season HUD</strong>: Seasons that change the world, with a display for the current one.</li>
+      <li><strong>Better Days</strong>: Custom day and night length.</li>
+      <li><strong>Particle Rain</strong>: Weather effects with falling rain and snow particles.</li>
+      <li><strong>Quark and Quark Oddities</strong>: Many small vanilla-style additions and tweaks.</li>
+      <li><strong>Supplementaries and Amendments</strong>: Decorative and utility blocks, plus nicer vanilla block behaviour.</li>
+      <li><strong>Lootr</strong>: Every player gets their own loot from chests.</li>
+      <li><strong>Fast Leaf Decay and Falling Trees</strong>: Leaves vanish fast and whole trees fall when chopped.</li>
+      <li><strong>Easy Anvils and Easy Shulker Boxes</strong>: Easier anvil use and quick shulker box access.</li>
+      <li><strong>Visual Workbench</strong>: Shows crafting results right in the workbench.</li>
+      <li><strong>Cut Through</strong>: Lets you reach items through blocks like signs.</li>
+      <li><strong>Item Obliterator</strong>: Admin tool to remove unwanted items.</li>
+      <li><strong>Caelus</strong>: Elytra and gliding support for other mods.</li>
+      <li><strong>Curios</strong>: Extra equipment slots such as rings and charms.</li>
+      <li><strong>Bountiful</strong>: Bounty boards with jobs to complete for rewards.</li>
+      <li><strong>Universal Enchants</strong>: Enchantments can be put on more items.</li>
+      <li><strong>Trade Seeker</strong>: Automatically rerolls villager trades until you find the one you want.</li>
+      <li><strong>Open Parties and Claims</strong>: Parties and land claims, mostly used at spawn.</li>
+      <li><strong>GriefLogger</strong>: Logs block changes so any griefing can be checked.</li>
+      <li><strong>Simple Voice Chat</strong>: Proximity voice chat in the game.</li>
+      <li><strong>WorldEdit</strong>: Admin building tools.</li>
+    </ul>
+    <h3>Quality of life and interface</h3>
+    <ul>
+      <li><strong>Jade</strong>: Shows what you are looking at in a small tooltip.</li>
+      <li><strong>JEI and Jeed</strong>: Recipe and item lookup, and effect info.</li>
+      <li><strong>AppleSkin</strong>: Shows food and saturation values.</li>
+      <li><strong>Better F3</strong>: A cleaner debug screen.</li>
+      <li><strong>Xaero&#x27;s Minimap and World Map</strong>: Minimap and a full world map.</li>
+      <li><strong>Inventory HUD+</strong>: Shows your armor and held items on screen.</li>
+      <li><strong>Inventory Profiles Next</strong>: Sorting and quick moving of inventory items.</li>
+      <li><strong>Inventory Particles</strong>: Little visual effects in the inventory.</li>
+      <li><strong>Mouse Tweaks</strong>: Faster item moving with the mouse.</li>
+      <li><strong>Polymorph</strong>: Fixes recipe conflicts between mods.</li>
+      <li><strong>Boat View</strong>: Better camera when you are in a boat.</li>
+      <li><strong>Short Stacks</strong>: Dropped item stacks are handled more cleanly.</li>
+      <li><strong>Sound Physics Remastered</strong>: Sound echoes and muffles realistically.</li>
+      <li><strong>Continuity</strong>: Connected textures for blocks like glass.</li>
+      <li><strong>Clumps</strong>: Merges nearby experience orbs.</li>
+      <li><strong>Collective</strong>: Shared helper features used by several mods.</li>
+    </ul>
+    <h3>Performance</h3>
+    <ul>
+      <li><strong>Sodium, Sodium Extra and Iris</strong>: Faster graphics, more video options and shader support.</li>
+      <li><strong>Lithium</strong>: Server and game logic optimizations.</li>
+      <li><strong>Saturn, FerriteCore and ModernFix</strong>: Cut memory use and speed up loading.</li>
+      <li><strong>Entity Culling</strong>: Skips drawing things you cannot see.</li>
+      <li><strong>Better FPS Render Distance</strong>: Cheaper rendering at long view distances.</li>
+      <li><strong>All The Leaks</strong>: Fixes memory leaks in other mods.</li>
+      <li><strong>Spark</strong>: Performance profiling for finding lag.</li>
+    </ul>
+    <h3>Optional extras (pick them under Customize)</h3>
+    <ul>
+      <li><strong>Dynamic lights (LambDynamicLights)</strong>: Held torches and similar items light up the area around you.</li>
+      <li><strong>Full Brightness Toggle</strong>: Toggle full brightness for easier cave visibility.</li>
+      <li><strong>Macro Keybinds</strong>: Bind keys to chat commands and actions.</li>
+      <li><strong>Mod Menu</strong>: Lists installed mods and their settings.</li>
+      <li><strong>Controlling</strong>: A searchable key bindings screen.</li>
+      <li><strong>Creeper Alert</strong>: Warns you when a creeper is close.</li>
+      <li><strong>True Darkness</strong>: Makes dark places properly dark.</li>
+      <li><strong>Visible Toggle Sprint</strong>: Shows when sprint or sneak is toggled on.</li>
+      <li><strong>Litematica-style schematics (Forgematica)</strong>: Show building blueprints in the world.</li>
+      <li><strong>WorldEdit CUI</strong>: Shows WorldEdit selections as outlines.</li>
+      <li><strong>Biome Info</strong>: Shows biome details on screen.</li>
+      <li><strong>Boc HUD</strong>: A customizable on-screen HUD.</li>
+      <li><strong>Cirrus</strong>: Adjusts how clouds look.</li>
+    </ul>
+    <h3>Library mods</h3>
+    <p class="note">These have no gameplay of their own. They just let the mods above work: Architectury, Cloth Config, Configured, Connector, Forgified Fabric API, Citadel, Cupboard, Cristellib, Framework, Fzzy Config, GlitchCore, Kambrik, Kotlin for Forge, libIPN, Lithostitched, MafgLib, Moonlight, MossyLib, Mysterious Mountain Lib, Necronomicon, PuzzlesLib, Resourceful Lib, Searchables, TerraBlender, Biolith, Veil, Yet Another Config Lib, Yung&#x27;s API, Zeta, Insane Lib, Forge Config API Port, Supermartijn642 Config Lib.</p>
+    </details>
+  </div>
 
   <div class="card">
     <h2>Using Prism Launcher instead?</h2>
